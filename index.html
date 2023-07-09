@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        
+        <meta charset="UTF-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>We Run It</title>
+
+        <link rel="stylesheet" href="style.css">
+
+        <link rel="stylesheet" href="../../image/logo1.png">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,300;1,400;1,500;1,600;1,700&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800;1,900&family=Raleway:wght@700&family=Satisfy&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet"
+        href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+        
+    </head>
+
+    <body>
+        
+        <header>
+
+            <a href="#">Logo<img src="" alt=""></a>
+
+            <nav>
+
+                <ul id="ul0">
+
+                    <li><a href="#">Home</a></li>
+
+                    <li><a href="#">Pinterest</a></li>
+
+                    <li><a href="#">Help</a></li>
+
+                </ul>
+
+            </nav>
+
+        </header>
+
+        <main>
+
+            <section id="section1">
+
+                <div id="div1">
+
+                    <h1  class="hidden"><mark>Welcome</mark></h1>
+
+                </div>
+
+            </section>
+
+            <section id="section2">
+
+                <div id="div2">
+
+                    <h2  class="hidden"><mark>We <span>Run</span> It</mark></h2>
+
+                    <h3>What we offer</h3>
+
+                </div>
+
+            </section>
+
+            <section id="section3">
+
+                <div id="div3">
+
+                    <ul id="ul1">
+                        
+                        Content
+
+                    </ul>
+
+                    <a target="_blank" href="https://pin.it/2l7UJlk"><li id="li1">Quotes</li></a>
+
+                    <a target="_blank" href="https://pin.it/7kP0JWM"><li id="li1">Memes</li></a>
+
+                    <a target="_blank" href="https://pin.it/EQuMMio"><li>Wallpaper</li></a>
+
+                    <a target="_blank" href="https://pin.it/36ogk8m"><li>Color pallets</li></a>  
+
+                    <a target="_blank" href="https://pin.it/2XSksHV"><li>Picture by AI</li></a>
+
+                </div>
+
+            </section>
+
+            <section id="section4">
+
+                <div id="div4">
+
+                    <ul id="ul2">
+                        
+                        Services
+
+                    </ul>
+
+                    <a target="_blank" href="#" >Web Dev<li id="li1"></li></a>
+
+                    <a target="_blank" href="#"><li id="li1">3D animation</li></a>
+
+                    <a target="_blank" href="#"><li>Bots creator</li></a>
+
+                    <a target="_blank" href="#"><li>Content creator</li></a>  
+
+                    <a target="_blank" href="#"><li>Social media Agency</li></a>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </body>
+
+</html>
+
+<script>
+
+     var span = document.querySelector('span');
+    function fun1() {
+        array1 = ['Own', 'Run'];
+        content = Math.floor(Math.random() * 2);
+        console.log(content)
+        span.innerText = array1[content];
+    }
+    fun1();
+    setInterval(fun1, 3000)
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            console.log(entry)
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+            }else {
+                entry.target.classList.remove('show');
+            }
+        })
+
+    })
+    const hiddenElements = document.querySelectorAll('.hidden');
+    hiddenElements.forEach((el) => observer.observe(el)); 
+
+    function fun2() {
+        var h1 = document.querySelector('h1');
+        var array2 = ['white', 'black'];
+        var array3 = ['white', 'black'];
+        color1 = Math.floor(Math.random() * array2.length);
+        color2 = Math.floor(Math.random() * array3.length);
+        console.log(color1);
+        console.log(color2);
+        var mark = document.querySelector('mark');
+        mark.style.color = array2[color1];
+        mark.style.backgroundColor = array3[color2];
+        if(mark.style.backgroundColor == 'white') {
+            mark.style.color = 'black';
+        };
+        if(mark.style.backgroundColor == 'black') {
+            mark.style.color = 'white';
+        };
+    };
+    fun2();
+    setInterval(fun2, 3000);
+
+</script>
