@@ -18,8 +18,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,300;1,400;1,500;1,600;1,700&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800;1,900&family=Raleway:wght@700&family=Satisfy&display=swap" rel="stylesheet">
 
-        <link rel="stylesheet"
-        href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
         
     </head>
 
@@ -51,7 +50,7 @@
 
                 <div id="div1">
 
-                    <h1  class="hidden"><mark>Welcome</mark></h1>
+                    <h1 id="h1" class="hidden"><mark>Welcome</mark></h1>
 
                 </div>
 
@@ -61,7 +60,7 @@
 
                 <div id="div2">
 
-                    <h2  class="hidden"><mark>We <span>Run</span> It</mark></h2>
+                    <h2 id="h2"  class="hidden"><mark>We <span>Run</span> It</mark></h2>
 
                     <h3>What we offer</h3>
 
@@ -115,6 +114,52 @@
 
                 </div>
 
+
+            </section>
+
+            <section id="section5">
+
+                <footer>
+
+                    <div id="div5">
+
+                        <p>Thanks for visiting our website<br>We are hoping your support</p>
+
+                    </div>
+                        
+                        <div id="div6">
+
+                            <a target="_blank" href="https://instagram.com/dpwahamoudi?igshid=ZGUzMzM3NWJiOQ=="><i class="fa-brands fa-instagram fa-2xl" style="color: #ffffff;"></i></a>
+
+                            <a target="_blank" href="https://www.facebook.com/mhamad.amhaz.7393?mibextid=ZbWKwL"><i class="fa-brands fa-facebook-f fa-2xl" style="color: #ffffff;"></i></a>                            
+                                                            
+                            <a target="_blank" href="https://pin.it/MT04qbl"><i class="fa-brands fa-pinterest-p fa-2xl" style="color: #ffffff;"></i></a>          
+
+                            <a target="_blank" href="tel:+961 81 145619"><i class="fa-brands fa-whatsapp fa-2xl" style="color: #ffffff;"></i></a>
+
+                            <a target="_blank" href="mailto:werunit.unit@gmail.com"><i class="fa-solid fa-envelope fa-2xl" style="color: #ffffff;"></i>
+                            </a>
+
+                        </div>
+
+                        
+                        <div id="div7">
+
+                            <ul>Web page designing:Mhamad Amhaz</ul>
+                            <ul>Founder:Mhamad Amhaz</ul>
+                            <ul>CEO:Hassan Ayoub</ul>
+
+                        </div>
+
+
+                        <div id="div8">
+
+                            <p>We Run It 2023. All right reserved &copy;</p>
+
+                        </div>
+
+                </footer>
+
             </section>
 
         </main>
@@ -129,7 +174,6 @@
     function fun1() {
         array1 = ['Own', 'Run'];
         content = Math.floor(Math.random() * 2);
-        console.log(content)
         span.innerText = array1[content];
     }
     fun1();
@@ -155,8 +199,6 @@
         var array3 = ['white', 'black'];
         color1 = Math.floor(Math.random() * array2.length);
         color2 = Math.floor(Math.random() * array3.length);
-        console.log(color1);
-        console.log(color2);
         var mark = document.querySelector('mark');
         mark.style.color = array2[color1];
         mark.style.backgroundColor = array3[color2];
@@ -167,6 +209,7 @@
             mark.style.color = 'white';
         };
     };
+    
     fun2();
     setInterval(fun2, 3000);
 
