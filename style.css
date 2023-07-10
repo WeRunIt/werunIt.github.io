@@ -409,4 +409,8 @@ mark:hover {
         position: relative; top: -70px;
     }
 
+    header nav #ul0 #Home #Home1 {
+        display: none;
+    }
+
 }
