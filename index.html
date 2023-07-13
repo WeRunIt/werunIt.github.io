@@ -26,7 +26,9 @@
         
         <header>
 
-		            <a href="#"><img title="Our Pinterest Logo" src="./OurPinterestLogo.png" alt="Our business" width="160p"></a>
+		    <a href="#"><img id="img1" title="Our Pinterest Logo" src="./OurPinterestLogo.png" alt="Our business" width="160p"></a>
+
+                <button id="button1">Light mode</button>
 
             <nav>
 
@@ -34,9 +36,9 @@
 
                     <li id="Home"><a id="Home1" href="http://127.0.0.1:5501/WebPages/FinallPage/index.html">Home</a></li>
 
-                    <li><a href="#">Pinterest</a></li>
+                    <li id="Pinterest"><a href="#">Pinterest</a></li>
 
-                    <li><a href="https://weownitunit.github.io/">Help</a></li>
+                    <li id="Help"><a href="https://weownitunit.github.io/">Help</a></li>
 
                 </ul>
 
@@ -46,7 +48,7 @@
 
         <main>
 
-            <section id="section1">
+            <section id="section1" class="bgcolor1 bgcolor2">
 
                 <div id="div1">
 
@@ -56,19 +58,19 @@
 
             </section>
 
-            <section id="section2">
+            <section id="section2" class="bgcolor11 bgcolor22">
 
                 <div id="div2">
 
                     <h2 id="h2"  class="hidden"><mark>We <span>Run</span> It</mark></h2>
 
-                    <h3>What we offer</h3>
+                    <h3 id="h3"><span>What we offer</span></h3>
 
                 </div>
 
             </section>
 
-            <section id="section3">
+            <section id="section3" class="bgcolor111 bgcolor222">
 
                 <div id="div3">
 
@@ -92,7 +94,7 @@
 
             </section>
 
-            <section id="section4">
+            <section id="section4" class="bgcolor1111 bgcolor2222">
 
                 <div id="div4">
 
@@ -117,13 +119,27 @@
 
             </section>
 
-            <section id="section5">
+            <section id="section5" class="bgcolor11111 bgcolor22222">
 
                 <footer>
 
                     <div id="div5">
 
                         <p>Thanks for visiting our website<br>We are hoping your support</p>
+
+                    </div>
+
+                    <div id="div5">
+
+                        <form target="_blank`" action="https://formsubmit.co/werunit.uinit@email.com" method="POST">
+
+                            <label for="fullName">Full Name</label>
+                            <input type="text" name="FullName" id="fullName">
+
+                            <input type="submit">
+
+                        </form>
+
 
                     </div>
                         
@@ -145,9 +161,9 @@
                         
                         <div id="div7">
 
-                            <ul>Web page designing:Mhamad Amhaz</ul>
-                            <ul>Founder:Mhamad Amhaz</ul>
-                            <ul>CEO:Hassan Ayoub</ul>
+                            <ul>Web page designing: <a href="javascript:void(0)">Mhamad Amhaz</a></ul>
+                            <ul>WERunIt Founder: <a href="javascript:void(0)">Mhamad Amhaz</a></ul>
+                            <ul>WERunIt co-Founder: <a href="javascript:void(0)">Hassan Ayoub</a></ul>
 
                         </div>
 
@@ -175,9 +191,10 @@
         array1 = ['Own', 'Run'];
         content = Math.floor(Math.random() * 2);
         span.innerText = array1[content];
-    }
+    };
+
     fun1();
-    setInterval(fun1, 3000)
+    setInterval(fun1, 3000);
 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
@@ -186,10 +203,10 @@
                 entry.target.classList.add('show');
             }else {
                 entry.target.classList.remove('show');
-            }
-        })
+            };
+        });
 
-    })
+    });
     const hiddenElements = document.querySelectorAll('.hidden');
     hiddenElements.forEach((el) => observer.observe(el)); 
 
@@ -209,8 +226,58 @@
             mark.style.color = 'white';
         };
     };
-    
+
     fun2();
     setInterval(fun2, 3000);
+
+    button1.addEventListener('click', function() {
+    if (section1.classList.contains('bgcolor1')) {
+            section1.classList.remove('bgcolor1');
+    } else if (section1.classList.contains('bgcolor2')) {
+            section1.classList.add('bgcolor1');
+    }
+
+
+    });
+
+    button1.addEventListener('click', function() {
+    if (section2.classList.contains('bgcolor11')) {
+            section2.classList.remove('bgcolor11');
+    } else if (section2.classList.contains('bgcolor22')) {
+            section2.classList.add('bgcolor11');
+    }
+
+
+    });
+
+    button1.addEventListener('click', function() {
+    if (section3.classList.contains('bgcolor111')) {
+            section3.classList.remove('bgcolor111');
+    } else if (section3.classList.contains('bgcolor222')) {
+            section3.classList.add('bgcolor111');
+    }
+
+
+    });
+
+    button1.addEventListener('click', function() {
+    if (section4.classList.contains('bgcolor1111')) {
+        section4.classList.remove('bgcolor1111');
+    } else if (section4.classList.contains('bgcolor2222')) {
+        section4.classList.add('bgcolor1111');
+    }
+
+
+    });
+
+    button1.addEventListener('click', function() {
+    if (section5.classList.contains('bgcolor11111')) {
+        section5.classList.remove('bgcolor11111');
+    } else if (section5.classList.contains('bgcolor22222')) {
+        section5.classList.add('bgcolor11111');
+    }
+
+
+    });
 
 </script>

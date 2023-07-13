@@ -56,7 +56,6 @@ header #ul0 li a {
     padding: 10px;
     font-size: 20px;
     transition: .4s;
-    transition: .4s;
 }
 
 header #ul0 {
@@ -76,6 +75,10 @@ header a:hover {
     box-shadow: 0 2px 2px 2px white;
 }
 
+#img1 {
+    position: relative; top: 3px;
+}
+
 section {
     display: flex;
     justify-content: center;
@@ -87,10 +90,16 @@ section {
 #section1 {
     width: 100%;
     height: 100vh;
-    background-color: blue;
-    background-image: var(--gradient1);
     background-size: 300% 300%;
     animation: bg-animation1 20s infinite;
+}
+
+.bgcolor1 {
+    background: linear-gradient(45deg, #ee6352, hsl(66, 91%, 53%), orange, #ee6352, #ffdb87, #ffdb87);
+}
+
+.bgcolor2 {
+    background-color: #ffc800;
 }
 
 @keyframes bg-animation1 {
@@ -126,12 +135,18 @@ mark:hover {
 }
 
 #section2  {
-    background-color: khaki;
+    width: 100%;
     height: 100vh;
-    background-color: blue;
-    background-image: var(--gradient2);
     background-size: 300% 300%;
     animation: bg-animation2 20s infinite;
+}
+
+.bgcolor11 {
+    background: linear-gradient(45deg, #ee6352, #07FEC1, #F8BF35, #67E389, #07FEC1);
+}
+
+.bgcolor22 {
+    background-color: #1fe5ff;
 }
 
 @keyframes bg-animation2 {
@@ -166,9 +181,17 @@ mark:hover {
     display: flex;
     justify-content: center;
     text-align: center;
-    background-image: var(--gradient3);
     background-size: 300% 300%;
     animation: bg-animation2 20s infinite;
+}
+
+.bgcolor111 {
+    background: linear-gradient(45deg, #FFB631,#FEC88E, #F97077,#FEAF6A, #FFB532,#88D1EE);
+
+}
+
+.bgcolor222 {
+    background-color: #0a9e9e;
 }
 
 #section3 #div3 {
@@ -214,9 +237,17 @@ mark:hover {
     display: flex;
     justify-content: center;
     text-align: center;
-    background-image: var(--gradient2);
     background-size: 300% 300%;
-    animation: bg-animation2 20s infinite;
+    animation: bg-animation2 20s ease  infinite;
+}
+
+.bgcolor1111 {
+    background: linear-gradient(45deg, #f32bfe,rgb(140, 255, 0), #0088be, #f32bfe );
+
+}
+
+.bgcolor2222 {
+    background-color: #32c579;
 }
 
 #section4 #div4 {
@@ -261,9 +292,17 @@ mark:hover {
     font-family: 'Times New Roman', Times, serif;
     align-items: end; 
     display: grid;
-    background: var(--gradient2);
     background-size: 300% 300%;
     animation: bg-animation2 20s infinite;
+}
+
+.bgcolor11111 {
+    background: linear-gradient(45deg, #5b69ff, rgb(0, 229, 255), rgb(255, 213, 0), #5b69ff);
+
+}
+
+.bgcolor22222 {
+    background-color: #5b69ff;
 }
 
 #section5 ul {
@@ -322,7 +361,66 @@ mark:hover {
     font-size: 20px;
 }
 
-.hidden {
+#section5 footer #div7 ul  {
+    text-align: start;
+}
+ 
+#section5 footer #div7 ul a {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    font-family: Roboto, -apple-system, sans-serif;
+    letter-spacing: 2px;
+    transition: .4s;
+}
+ 
+#section5 footer #div7 ul a:hover {
+    text-decoration: underline;
+    color: rgb(255, 255, 255);
+}
+
+#div0 {
+    display: block;
+}
+
+#button1 {
+    background-color: transparent;
+    backdrop-filter:blur(50px);
+    -webkit-backdrop-filter:blur(50px);
+    border-radius: 20px;
+    padding-inline: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    color: white;
+    font-weight: 100;
+    transition: 0.4s;
+}
+
+#button1:hover {
+    color: black;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* #button2 {
+    background-color: transparent;
+    backdrop-filter:blur(50px);
+    -webkit-backdrop-filter:blur(50px);
+    border-radius: 20px;
+    padding-inline: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    color: white;
+    font-weight: 100;
+    transition: 0.4s;
+    position: relative; left: -78px;
+    display: none;
+}
+
+#button2:hover {
+    color: black;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+ */
+
+ .hidden {
     opacity: 0;
     transition: all 1s;
     filter: blur(5px);
@@ -364,14 +462,6 @@ mark:hover {
     #section h1 {
         font-size: 100px;
     }
-
-    #ssection #div2 h2 {
-        font-size: 80px;
-    }
-
-    #ssection #div2 h3 {
-        font-size: 60px;
-    }
           
 }
 
@@ -379,6 +469,11 @@ mark:hover {
     #section2 #div2 #h2 {
         font-size: 80px;
     }
+
+    #section2 #div2 #h3 {
+        font-size: 60px;
+    }
+
 }
 
 @media (max-width:550px) {
@@ -388,29 +483,67 @@ mark:hover {
     }
 
     #section2 #div2 #h2 {
-        font-size: 80px;
+        font-size: 70px;
         position: relative; top: -70px;
     }
 
-    #ssection #div2 h3 {
-        font-size: 60px;
+    #section2 #div2 h3 {
+        font-size: 40px;
     }
-          
+    
 }
 
 @media (max-width:450px) {
     
+    header {
+        height: 30px;
+    }
+
+    header nav #ul0:hover {
+        background-color: transparent;
+        box-shadow: none;
+        padding: 0px;
+    }
+
+    header nav #ul0 a {
+        font-size: 18px;
+        padding: 2px;
+        margin-right: 10px;
+    }
+
+    li:hover {
+        background-color: transparent;
+        box-shadow: none;
+        padding: 0px;
+    }
+
+    a:hover {
+        background-color: transparent;
+        box-shadow: none;
+        padding: 0px;
+        box-shadow: none;
+    }
+
+    #img1 {
+        width: 100px;
+        position: relative;top: 3px;
+    }
+
     #section1 #div1 #h1  {
         font-size: 70px;
     }
 
-    #section2 #div2 #h2 mark {
-        font-size: 50px;
-        position: relative; top: -70px;
+    #section2 #div2 #h2  {
+        font-size: 45px;
+        position: relative; top: -40px;
     }
 
     header nav #ul0 #Home #Home1 {
         display: none;
     }
 
+    #section2 #div2 #h3 {
+        font-size: 37px;
+    }
+  
 }
