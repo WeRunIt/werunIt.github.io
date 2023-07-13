@@ -251,7 +251,7 @@ mark:hover {
 }
 
 #section4 #div4 {
-    position: relative;top: -30px;
+    position: relative;top: 30px;
     width: fit-content;
     height: fit-content;
     border-radius: 20px;
@@ -314,42 +314,34 @@ mark:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-#section5 #div5 p {
     text-align: center;
-    font-size: 30px;
-    font-family: 'IBM Plex Mono', monospace;
-    margin-inline: 30px;
-    font-weight: 500;
+    display: flex;
+    justify-content: center;
 }
 
-#section5 #div6  {
+.par1  {
+    position: relative; top: -120px;
+    font-size: 60px;
+    text-align: center;
+}
+
+#section5 #div7  {
     width: 100%;
     height: 70px;
-    backdrop-filter:blur(10px);
-    -webkit-backdrop-filter:blur(10px);    
+    backdrop-filter:blur(50px);
+    -webkit-backdrop-filter:blur(50px);    
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     transition: .4s;
 }
 
-#section5 #div6 a {
+#section5 #div7 a {
     transition: .4s;
 }
 
-#section5 #div6 a:hover  {
+#section5 #div7 a:hover  {
     transform: translate(0%, -70%);
-}
-
-#section5 #div7 {
-    width: 100%;
-    text-align: center;
-    height: 80px;
-    display: grid;
-    justify-content: center;
-    align-items: end;
 }
 
 #section5 #div8 {
@@ -358,7 +350,7 @@ mark:hover {
     display: flex;
     justify-content: center;
     align-items: end;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 #section5 footer #div7 ul  {
@@ -379,10 +371,6 @@ mark:hover {
     color: rgb(255, 255, 255);
 }
 
-#div0 {
-    display: block;
-}
-
 #button1 {
     background-color: transparent;
     backdrop-filter:blur(50px);
@@ -400,26 +388,6 @@ mark:hover {
     border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-/* #button2 {
-    background-color: transparent;
-    backdrop-filter:blur(50px);
-    -webkit-backdrop-filter:blur(50px);
-    border-radius: 20px;
-    padding-inline: 3px;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    color: white;
-    font-weight: 100;
-    transition: 0.4s;
-    position: relative; left: -78px;
-    display: none;
-}
-
-#button2:hover {
-    color: black;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-}
- */
-
  .hidden {
     opacity: 0;
     transition: all 1s;
@@ -431,6 +399,122 @@ mark:hover {
     opacity: 1;
     filter: none;
     transform: translate(0%);
+}
+
+#div6 {
+    display: flex;
+    justify-content: center
+}
+
+form {
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px double rgba(255, 255, 255, 0.3);
+    position: relative; top: -100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: fit-content;
+    height: fit-content;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#name {
+    width: 200px;
+    color: white;
+    position: relative;
+    border-radius: 20px;
+    border: none;
+    padding: 5px;
+    padding-left: 9px;
+    background-color: #5b69ff;
+    transition: .2s linear;
+}
+
+#name:focus {
+    color: #5b69ff;
+    background-color: white;
+    outline: none;
+}
+
+#name::placeholder {
+    color: white;
+}
+
+#name::placeholder    {
+    color: white;
+}
+
+#email {
+    width: 200px;
+    color: white;
+    position: relative;
+    border-radius: 20px;
+    border: none;
+    padding: 5px;
+    padding-left: 9px;
+    background-color: #5b69ff;
+    transition: .2s linear;
+}
+
+#email:focus {
+    color: #5b69ff;
+    background-color: white;
+    outline: none;
+}
+
+#email::placeholder {
+    color: white;
+}
+
+#email:focus #email::placeholder {
+    color: #5b69ff;
+}
+
+#message {
+    width: 200px;
+    color: white;
+    position: relative;
+    border-radius: 20px;
+    border: none;
+    padding: 5px;
+    padding-left: 9px;
+    background-color: #5b69ff;
+    transition: .2s linear;
+}
+
+#message:focus {
+    color: #5b69ff;
+    background-color: white;
+    outline: none;
+}
+
+#message::placeholder {
+    color: white;
+}
+
+#message:focus #message::placeholder {
+    color: #5b69ff;
+}
+
+#submit {
+    width: 80px;
+    height: fit-content;
+    color: #2430bc;
+    font-weight: 600;
+    border-radius: 10px;
+    padding-inline: 10px;
+    font-size: 15px;
+    border: solid 1px rgba(0, 0, 0, .1);
+    transition: .2s;
+}
+
+#submit:hover {
+    background-color: #5b69ff;
+    color: white;
+    transform: scale(1.2);
 }
 
 @media(prefers-reduced-motion) {
@@ -454,7 +538,14 @@ mark:hover {
     scroll-snap-type: y mandatory;
     overflow-x: hidden;
     }
-          
+      
+    .div5 .par1 {
+        position: relative; top: -80px;
+        font-size: 45px;
+        font-family: monospace, sans-serif;
+        text-align: center;
+    }
+
 }
 
 @media (max-width:650px) {
@@ -462,7 +553,14 @@ mark:hover {
     #section h1 {
         font-size: 100px;
     }
-          
+    
+    .div5 .par1 {
+        position: relative; top: -80px;
+        font-size: 35px;
+        font-family: monospace, sans-serif;
+        text-align: center;
+    }
+
 }
 
 @media (max-width:680px) {
@@ -490,7 +588,14 @@ mark:hover {
     #section2 #div2 h3 {
         font-size: 40px;
     }
-    
+ 
+    .div5 .par1 {
+        position: relative; top: -80px;
+        font-size: 25px;
+        font-family: monospace, sans-serif;
+        text-align: center;
+    }
+
 }
 
 @media (max-width:450px) {
@@ -545,5 +650,12 @@ mark:hover {
     #section2 #div2 #h3 {
         font-size: 37px;
     }
-  
+
+    .div5 .par1 {
+        position: relative; top: -100px;
+        font-size: 20px;
+        font-family: monospace, sans-serif;
+        text-align: center;
+    }
+
 }
