@@ -299,6 +299,15 @@
 
     });
 
+    button1.addEventListener('click', function() {
+    if (section5.classList.contains('bgcolor11111')) {
+        section5.classList.remove('bgcolor11111');
+    } else if (section5.classList.contains('bgcolor22222')) {
+        section5.classList.add('bgcolor11111');
+    }
+
+    });
+
     const hamburger = document.querySelector('.hamburger');
     const navMenu = document.querySelector('.nav-menu');
 
