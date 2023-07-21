@@ -756,6 +756,44 @@ i {
 
 }
 
+@media (max-width:320px) {
+    
+    #par1 {
+        position: relative; top: 250px;
+        font-size: 20px;
+    }
+
+    #par1 i {
+        font-size: 20px;
+    }
+
+    #div4 a li {
+        font-size: 20px;
+        padding: 0px;
+    }
+
+    #div4 a {
+        height: 50px;
+    }
+    
+    #div4 #ul2 {
+        font-size: 40px;
+    }
+
+    #div3 a li {
+        font-size: 20px;
+        padding: 0px;
+    }
+
+    #div3 a {
+        height: 50px;
+    }
+    
+    #div3 #ul1 {
+        font-size: 40px;
+    }
+
+}
 .toggleWrapper {
     position: absolute;
     top: 50%;
@@ -1057,6 +1095,5 @@ i {
     top: 28px;
     left: 5px;
   }
-
 
 
