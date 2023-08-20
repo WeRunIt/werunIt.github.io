@@ -4,6 +4,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+
 }
 
 :root {
@@ -26,6 +27,11 @@ html {
 body {
     height: 100vh;
     scroll-behavior:smooth;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 body::-webkit-scrollbar {
@@ -45,6 +51,11 @@ header  {
     box-shadow: 0 -6px 10px 5px rgba(0,0,0,0.5);
     z-index: 9999;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 header li {
@@ -52,6 +63,14 @@ header li {
 }
 
 header #ul0 li a {
+    text-decoration: none;
+    color: var(--clr2);
+    padding: 10px;
+    font-size: 20px;
+    transition: .4s;
+}
+
+header #ul0 li a:hover {
     text-decoration: none;
     color: var(--clr1);
     padding: 10px;
@@ -64,18 +83,10 @@ header #ul0 {
     transition: .4s;
 }
 
-header a:hover {
-    backdrop-filter:blur(50px);
-    -webkit-backdrop-filter:blur(50px);
-    box-shadow: 0 2px 10px 5px pink;
-    color: pink;
-}
 
 #ul0:hover {
-    background-color: orange;
-    box-shadow: 0 2px 2px 2px white;
+    background-color: initial;
 }
-
 #img1 {
     position: relative; top: 3px;
 }
@@ -114,6 +125,7 @@ section {
     height: 100vh;
     background-size: 300% 300%;
     animation: bg-animation1 20s infinite;
+    display: flex;
 }
 
 .bgcolor1 {
@@ -138,6 +150,7 @@ section {
     font-size: 120px;
     text-shadow: 5px 0px 0px black;
     transition: .8s;
+    margin: 10px;
 }
 
 mark {
@@ -352,9 +365,11 @@ mark:hover {
 }
 
 .par1  {
-    position: relative; top: -120px;
+    position: relative; top: -80px;
     font-size: 60px;
     text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    white-space: pre-wrap;
 }
 
 #section5 #div7  {
@@ -597,10 +612,11 @@ i {
       
     .div5 .par1 {
         position: relative; top: -80px;
-        font-size: 45px;
-        font-family: monospace, sans-serif;
+        font-size: 40px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
         text-align: center;
-    }
+        white-space: pre-wrap;
+       }
 
     .hamburger {
         display: block;
@@ -657,8 +673,9 @@ i {
     .div5 .par1 {
         position: relative; top: -80px;
         font-size: 35px;
-        font-family: monospace, sans-serif;
+        font-family: Georgia, 'Times New Roman', Times, serif;
         text-align: center;
+        white-space: pre-wrap;
     }
 
 }
@@ -692,8 +709,9 @@ i {
     .div5 .par1 {
         position: relative; top: -80px;
         font-size: 25px;
-        font-family: monospace, sans-serif;
+        font-family: Georgia, 'Times New Roman', Times, serif;
         text-align: center;
+        white-space: pre-wrap;
     }
 
 }
@@ -750,8 +768,9 @@ i {
     .div5 .par1 {
         position: relative; top: -100px;
         font-size: 20px;
-        font-family: monospace, sans-serif;
+        font-family: Georgia, 'Times New Roman', Times, serif;
         text-align: center;
+        white-space: pre-wrap;
     }
 
 }
@@ -761,10 +780,14 @@ i {
     #par1 {
         position: relative; top: 250px;
         font-size: 20px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        white-space: pre-wrap;
     }
 
     #par1 i {
         font-size: 20px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        white-space: pre-wrap;
     }
 
     #div4 a li {
@@ -1096,4 +1119,14 @@ i {
     left: 5px;
   }
 
+div img {
+    width: 200px;
+    height: auto;
 
+}
+
+#div11 {
+    height: fit-content;
+    width: fit-content;
+    position: relative;top: -70px; left: 10px;
+}
