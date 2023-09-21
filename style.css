@@ -19,6 +19,7 @@ html {
 }
 
 body {
+    overflow-x: hidden;
     height: 100vh;
     scroll-behavior: smooth;
     -webkit-user-select: none;
@@ -155,6 +156,7 @@ label {
 }
 
 @media (max-width:450px) {
+
     label {
         position: relative; left: 50px;
     }
@@ -324,7 +326,7 @@ header nav ul li a.dark-mode:hover {
         flex-direction: column;
         width: 100%;
         text-align: center;
-        transform: .3s;
+        transform: .4s;
     }
 
     .nav-item {
@@ -361,7 +363,7 @@ header nav ul li a.dark-mode:hover {
         border-bottom: 1px solid rgba(0, 0, 0, .2);
     }
 
-    .list1, .list2, .list3 {
+    .list1, .list2 {
         padding: 0px;
     }
 
